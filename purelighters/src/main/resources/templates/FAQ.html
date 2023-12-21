@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles_faq.css">
+</head>
+<body>
+    <header>
+        <div class="header" id="myHeader">
+          <div class="header-content">
+            <div class="hamburger-menu">
+              <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+              </div>
+              <ul class="menu-items">
+                <li><a th:href="@{/}">Dragon Lighter</a></li>
+                <li><a th:href="@{/About-us}">About us</a></li>
+                <li><a th:href="@{/Contact}">Contact us</a></li>
+                <li><a th:href="@{/FAQ}">FAQ</a></li>
+              </ul>
+            </div>
+            <a th:href="@{/}" class="header-link">
+              <div class="logo">
+                <img src="/images/logo.png" alt="logo">
+              </div>
+              <h1>Pure Lighters</h1>
+            </a>
+            <div class="shopping-cart">
+              <a class="shopping-cart-header" th:href="@{/shopping-cart}"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div> 
+    </header>
+
+
+    <main>
+        <section class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+            
+            <div class="faq-item">
+                <button class="question">What is the return policy?</button>
+                <div class="answer">
+                    <p>Our return policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately, we can’t offer you a refund or exchange.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="question">How do I track my order?</button>
+                <div class="answer">
+                    <p>You can track your order with the tracking number provided in your shipping confirmation email.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="question">What is the expected delivery time?</button>
+                <div class="answer">
+                    <p>We strive to mail your order within one business day. Our partners will try to deliver your order as quickly as possible. Averaging around 3 - 7 business days.</p>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <span>Learn more about Pure Lighters, our mission, and our team.</span>
+                <a th:href="@{/about}">Read More</a>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <span>Email: contact@purelighters.com</span>
+            </div>
+  
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="http://www.facebook.com">Facebook</a> |
+                <a href="http://www.twitter.com">Twitter</a> |
+                <a href="http://www.instagram.com">Instagram</a> |
+                <a href="http://www.tiktok.com">Tiktok</a>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="/privacy-policy.html">Privacy Policy</a> |
+                <a href="/terms-of-service.html">Terms of Service</a>
+            </div>
+        </div>
+      </footer>
+
+      <script src="/js/script_faq.js"></script>
+</body>
+</html>

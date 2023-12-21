@@ -1,0 +1,208 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* This sets the font weight to bold for headings */
+}
+
+  
+  .header {
+    background:  rgb(25, 25, 25);
+    color: #f1f1f1;
+  }
+  
+
+  
+  
+  body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+  }
+  
+    
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* Aligns items with space between */
+    align-items: center; /* Vertically centers items */
+    padding: 10px;
+  }
+  
+  .header-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures the text color stays the same as the parent element */
+    display: flex; /* Keeps the logo and text aligned */
+    align-items: center; /* Centers items vertically */
+  }
+  
+  /* If needed, add additional styling for hover effects */
+  .header-link:hover {
+    text-decoration: none; /* Example: Ensures no underline on hover */
+    /* Other hover styles if needed */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from link */
+    color: inherit; /* Inherits text color from parent */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust logo size as needed */
+    margin-right: 8px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5em; /* Adjust company name size as needed */
+  }
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Add this line */
+    justify-content: center; /* Add this line */
+}
+
+.header-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures the text color stays the same as the parent element */
+    display: flex; /* Keeps the logo and text aligned */
+    align-items: center; /* Centers items vertically */
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.item-picture {
+    width: 20vw;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 15px; /* Add space between the picture and the text */
+    margin-left: 10px;
+}
+
+.item-info {
+    flex-grow: 1;
+}
+
+.item-name {
+    font-weight: bold;
+    display: block; /* Makes the name appear on its own line */
+}
+
+.item-description {
+    margin-top: 5px;
+    display: block; /* Makes the description appear on its own line */
+}
+
+.item-price {
+    /* Ensures the price is always on the right */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+}
+
+.summary {
+    text-align: left;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.summary > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.label {
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+.price {
+    padding-right: 30px;
+    font-weight: bold;
+    text-align: right; /* Aligns the price to the right */
+}
+
+.total, .shipping {
+    display: block; /* Each on its own line */
+}
+
+.star-rating {
+    margin-right: 10px;
+    color: #c29439;
+}
+
+.quantity-field {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-field label {
+    margin-right: 5px;
+    font-size: smaller;
+    color: #555;
+}
+
+.quantity-field input[type="number"] {
+    width: 50px; /* Adjust as needed */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkout-button {
+    background-color: #c29439; /* Eye-catching color */
+    color: white; /* Contrasting text color */
+    margin: 10px 10%;
+    margin-bottom: 5px;
+    padding: 15px 0; /* Top/bottom and left/right padding */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Allows setting a width and height */
+    font-size: 25px; /* Readable font size */
+    border: none; /* Remove border for aesthetic purposes */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to hand icon to indicate it's clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    width: 80%;
+}
+
+.checkout-button:hover {
+    background-color: #ab8332; /* Slightly darker shade on hover */
+}
+
+a i {
+    margin-right: 5px; /* Adds some space between the icon and the text */
+}

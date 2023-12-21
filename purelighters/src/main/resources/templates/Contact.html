@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles_contact.css">
+</head>
+<body>
+    <header>
+        <div class="header" id="myHeader">
+          <div class="header-content">
+            <div class="hamburger-menu">
+              <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+              </div>
+              <ul class="menu-items">
+                <li><a th:href="@{/}">Dragon Lighter</a></li>
+                <li><a th:href="@{/About-us}">About us</a></li>
+                <li><a th:href="@{/Contact}">Contact us</a></li>
+                <li><a th:href="@{/FAQ}">FAQ</a></li>
+              </ul>
+            </div>
+            <a th:href="@{/}" class="header-link">
+              <div class="logo">
+                <img src="/images/logo.png" alt="logo">
+              </div>
+              <h1>Pure Lighters</h1>
+            </a>
+            <div class="shopping-cart">
+              <a class="shopping-cart-header" th:href="@{/shopping-cart}"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div> 
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Have questions? We would love to hear from you. Reach out to us through email, or send us a message using the form.</p>
+            
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p><strong>Email:</strong> contact@purelighters.com</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form action="submit_contact_form.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>About Us</h3>
+              <span>Learn more about Pure Lighters, our mission, and our team.</span>
+              <a th:href="@{/about}">Read More</a>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Contact</h3>
+              <span>Email: contact@purelighters.com</span>
+          </div>
+
+          <div class="footer-section">
+              <h3>Follow Us</h3>
+              <a href="http://www.facebook.com">Facebook</a> |
+              <a href="http://www.twitter.com">Twitter</a> |
+              <a href="http://www.instagram.com">Instagram</a> |
+              <a href="http://www.tiktok.com">Tiktok</a>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Legal</h3>
+              <a href="/privacy-policy.html">Privacy Policy</a> |
+              <a href="/terms-of-service.html">Terms of Service</a>
+          </div>
+      </div>
+    </footer>
+
+    <script src="/js/script_contact_us.js"></script>
+</body>
+</html>

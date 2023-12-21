@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles_cart.css">
+</head>
+<body>
+    <header>
+        <div class="header" id="myHeader">
+          <div class="header-content">
+            <a th:href="@{/}" class="header-link">
+              <div class="logo">
+                <img src="/images/logo.png" alt="logo">
+              </div>
+              <h1>Pure Lighters</h1>
+            </a>
+          </div>
+        </div> 
+      </header> 
+    <h1>Shopping Cart</h1>
+    <div class="items">
+        <!-- Item 1 -->
+        <div class="item">
+            <img class="item-picture" src="/images/Main image.jpg" alt="Dragon Lighter">
+            <div class="item-info">
+                <span class="item-name">Dragon Lighter</span>
+                <div class="star-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <span class="rating-number">(4.8)</span>
+                  </div>    
+                <span class="item-description">The last lighter you will ever need</span>
+                <div class="quantity-field">
+                    <label for="quantity-dragon-lighter">Quantity:</label>
+                    <input type="number" id="quantity-dragon-lighter" name="quantity-dragon-lighter" value="1" min="1">
+                </div>
+            </div>
+            <span id="item-price" class="item-price">€19.95</span>
+        </div>
+        <!-- Additional items would follow the same structure -->
+    </div>
+    <div class="summary">
+        <div class="subtotal">
+            <span class="label">Subtotal:</span>
+            <span id="subtotal-price" class="price">€19.95</span>
+        </div>
+        <div class="shipping">
+            <span class="label">Shipping:</span>
+            <span class="price">Free</span>
+        </div>
+        <div class="total">
+            <span class="label">Total:</span>
+            <span id="total-price" class="price">€19.95</span>
+        </div>
+    </div>
+
+    <a th:href="@{/checkout}" class="checkout-button"><i class="fas fa-lock"></i>Safe Checkout</a>
+    
+    <script src="/js/script_cart.js"></script>
+</body>
+</html>

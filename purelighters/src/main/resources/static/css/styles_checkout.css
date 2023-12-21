@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* This sets the font weight to bold for headings */
+}
+
+  
+  .header {
+    background:  rgb(25, 25, 25);
+    color: #f1f1f1;
+  }
+  
+
+  
+  
+  body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+  }
+  
+    
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between; /* Aligns items with space between */
+    align-items: center; /* Vertically centers items */
+    padding: 10px;
+  }
+  
+  .header-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures the text color stays the same as the parent element */
+    display: flex; /* Keeps the logo and text aligned */
+    align-items: center; /* Centers items vertically */
+  }
+  
+  /* If needed, add additional styling for hover effects */
+  .header-link:hover {
+    text-decoration: none; /* Example: Ensures no underline on hover */
+    /* Other hover styles if needed */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from link */
+    color: inherit; /* Inherits text color from parent */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust logo size as needed */
+    margin-right: 8px;
+  }
+  
+  .logo h1 {
+    font-size: 1.5em; /* Adjust company name size as needed */
+  }
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Add this line */
+    justify-content: center; /* Add this line */
+}
+
+.header-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Ensures the text color stays the same as the parent element */
+    display: flex; /* Keeps the logo and text aligned */
+    align-items: center; /* Centers items vertically */
+}
+
+
+.checkout-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+
+.checkout-button {
+    background-color: #c29439;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #ab8332;
+}
