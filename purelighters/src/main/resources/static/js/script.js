@@ -56,3 +56,23 @@ document.addEventListener('DOMContentLoaded', function () {
       menuItems.style.display = menuItems.style.display === 'block' ? 'none' : 'block';
   });
 });
+
+
+var swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // If you need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // And if you need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});

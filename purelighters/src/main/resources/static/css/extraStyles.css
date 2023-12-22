@@ -8,7 +8,12 @@ html, body {
     height: auto;
     display: block;
   }
-  
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
   /* HEADER */
   .header {
     background:  rgb(25, 25, 25);
@@ -20,14 +25,10 @@ html, body {
   .sticky {
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
+    z-index: 1000;
   }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-  }
-  
+
   .shopping-cart-header {
     margin: 0 0;
     padding: 0 0;
@@ -39,7 +40,6 @@ html, body {
   .hamburger-menu, .shopping-cart {
     font-size: 24px; /* Adjust the size of the icons */
     cursor: pointer;
-    cursor: pointer; /* Changes cursor to pointer type when hovering over icon */
     color: #F9F9F9; /* Color of the icon */
     padding-right: 10px;
     padding-left: 10px;
