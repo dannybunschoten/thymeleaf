@@ -136,22 +136,20 @@ html, body {
   .Product-title {
     padding-bottom: 0;
     margin-bottom: 1px;
-    margin-top: 5px;
-    font-size: 8vw;
+    margin-top: 0;
+    font-size: 35px;
   }
-  
-  .Price-tag {
-    font-size: 4vw; /* Adjust the font size as needed */
-  }
-  
+
   .original-price {
     text-decoration: line-through; /* Strike through the original price */
     color: grey; /* Dim the color to differentiate from the discounted price */
     margin-right: 10px; /* Spacing between original and discounted price */
+    font-size: 16px;
   }
   
   .discounted-price {
     font-weight: bold; /* Make the discounted price more prominent */
+    font-size: 20px;
   }
 
 
