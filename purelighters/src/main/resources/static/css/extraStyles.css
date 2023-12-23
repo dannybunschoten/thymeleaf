@@ -94,6 +94,7 @@ html, body {
   
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700; /* This sets the font weight to bold for headings */
+    font-family: 'Lato', sans-serif;
   }
   
   .header-content {
@@ -215,7 +216,7 @@ main {
 
 .feature p {
     color: #333;
-    font-size: 16px;
+    font-size: 1.1em;
     margin-top: 0;
 }
 
@@ -233,11 +234,23 @@ main {
     .swiper-button-prev, .swiper-button-next {
       display: none;
     }
+
+  .Refilling h3 {
+    font-size: 1.3em; /* Slightly smaller on mobile */
+    color: #333; /* Dark color for emphasis */
+    margin-bottom: 0.5em;
+  }
+
+  .refillable-text p {
+    font-size: 0.9em; /* Slightly smaller on mobile */
+  }
 }
 
 .Refilling, .Style-picture, .change-size-picture {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em; /* Larger font size for the headline */
+  color: #333; /* Dark color for emphasis */
+  margin-bottom: 0.5em;
 }
 
 .Refilling img, .Style-picture img, .change-size-picture img {
@@ -250,8 +263,49 @@ main {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
+    line-height: 1.6; /* Adequate line spacing for readability */
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.refillable-text strong {
+  color: #c29439; /* Color that stands out */
+  font-weight: bold;
+}
+
+.lighter-feature {
+  background-color: #fff; /* Or any background color that fits your design */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+  padding: 20px; /* Padding inside the box */
+  margin-bottom: 20px; /* Space between this box and anything below it */
+  text-align: center; /* Centering the text and content */
+}
+
+.lighter-feature h3 {
+  margin-top: 0; /* Remove default top margin */
+  color: #333; /* Color for the title */
+  margin-bottom: 15px; /* Space between title and image */
+  font-size: 3em;
+}
+
+.feature-description {
+  color: #333;
+  font-size: 1em; /* Font size for the description */
+  margin-top: 15px; /* Space between image and description */
+}
+
+.feature-description strong {
+  color: #ab8332; /* Color that stands out */
+  font-weight: bold;
+}
+
+.lighter-feature .lighter-video video {
+  width: 80%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 600px; /* Maximum width, adjust as needed */
+  margin: 0 auto; /* Center the video in the container */
+  border-radius: 8px; /* If you want rounded corners */
 }
 
 .social-proof h3 {
