@@ -58,10 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-var swiper = new Swiper('.swiper', {
+var swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
     // If you need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -70,9 +70,5 @@ var swiper = new Swiper('.swiper', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-    // And if you need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    }
 });

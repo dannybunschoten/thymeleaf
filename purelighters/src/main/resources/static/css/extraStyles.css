@@ -222,8 +222,24 @@ main {
         flex-basis: 100%; /* Each feature takes full width */
         margin-bottom: 20px;
     }
+
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+    }
 }
 
+.swiper-slide {
+  height: 800px; /* or any other fixed height */
+  position: relative; /* needed for absolute positioning of the image */
+}
+
+.full-width-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This will cover the entire area of the slide */
+  position: absolute;
+  top: 0;
+}
 
 .Refilling, .Style-picture, .change-size-picture {
     text-align: center;
@@ -266,18 +282,6 @@ main {
 .money-back-guarantee p {
     font-size: 1.1em;
 }
-
-@media screen and (max-width: 768px) {
-    .features {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .feature {
-        flex-basis: auto;
-    }
-}
-
 
 .product-rating {
     display: flex;
