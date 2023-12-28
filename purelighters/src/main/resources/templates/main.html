@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,13 +41,32 @@
 
   <div class="swiper-container" id="content">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="/images/Main%20image.jpg" alt="Dragon Lighter main picture" class="full-width-image"></div>
-        <div class="swiper-slide"><img src="/images/main%20image%20two.jpg" alt="Dragon Lighter main picture" class="full-width-image"></div>
-        <div class="swiper-slide"><img src="/images/main%20image%20three.jpg" alt="Dragon Lighter main picture" class="full-width-image"></div>
-        <div class="swiper-slide"><img src="/images/main%20image%20four.jpg" alt="Dragon Lighter main picture" class="full-width-image"></div>
+        <div class="swiper-slide">
+          <img src="/images/output.webp" alt="Dragon Lighter main picture" class="full-width-image swiper-lazy" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/output2.webp" alt="Dragon Lighter main picture" class="full-width-image swiper-lazy" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/output3.webp" alt="Dragon Lighter main picture" class="full-width-image swiper-lazy" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/output4.webp" alt="Dragon Lighter main picture" class="full-width-image swiper-lazy" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/output5.webp" alt="Dragon Lighter main picture" class="full-width-image swiper-lazy" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/output6.webp" alt="Dragon Lighter main picture" class="full-width-image swiper-lazy" loading="lazy">
+          <div class="swiper-lazy-preloader"></div>
+        </div>
     </div>
     <div class="swiper-pagination"></div>
-
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
@@ -82,7 +101,6 @@
       <a th:href="@{/shopping-cart}" class="buy-now-button">Buy Now</a>
     </div>
   
-
     <div class="belowBuy">
     <div class="features">
       <div class="feature">
@@ -108,9 +126,7 @@
         <img src="/images/wind.png" alt="windy">
         <p><strong>Wind- & waterproof:</strong> The blue jet flame ensures that you can light easily, even in windy conditions.</p>
       </div>
-
     </div>
-
       <div class="lighter-feature">
         <h3>Refill easily</h3>
         <div class="lighter-video">
@@ -123,32 +139,36 @@
       </div>
 
       <div class="Style-picture">
-      <img  src="/images/stylishPhoto.jpg" alt="Dragon Lighter in style">
-      <p>What do you know about style?</p>
-    </div>
-      
-    <div class="Weather-text">
-      Bid farewell to the unpredictability of the elements. Our advanced, wind- and waterproof torch flame ensures that no gust or downpour can hinder its performance. Whether atop a windswept mountain or amidst a stormy voyage, the Dragon Lighter stands as your steadfast companion.
-    </div>
+        <img src="/images/stylishPhoto.jpg" alt="Dragon Lighter in style">
+      </div>
 
-    <div class="change-size-picture">
-      <img  src="/images/change-size.gif" alt="change flame size">
-      <p>You can easily change the size of the flame</p>
-    </div>
+      <div class="lighter-feature">
+        <h3>Wind- & waterproof</h3>
+        <div class="lighter-video">
+          <video src="/videos/dualFlame.mp4" autoplay loop muted playsinline>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="feature-description">The <strong>unique</strong> dual flame design of the Dragon lighter allows for a wind- & waterproof design that is also stylish. The jet flame withstands all weather conditions, whereas the larger flame eases the lighting.</p>
+      </div>
 
-    <div class="social-proof">
-      <h3>Trusted by Thousands</h3>
-      <p>
-        Join a growing community of over 3,000 satisfied customers who have transformed their lighting experience with the Dragon Lighter. Our customers rave about its reliability, style, and innovative features, making it a top choice among discerning users worldwide. From adventurers braving the great outdoors to style enthusiasts looking for that perfect accessory, the Dragon Lighter has earned glowing reviews across the board. Don’t just take our word for it – experience the difference that so many have already discovered. Make the switch to sophistication; make the switch to Dragon Lighter.
-      </p>
-    </div>
-    
+      <div class="lighter-feature">
+        <h3>Trusted by Thousands</h3>
+        <p class="feature-description">
+          Join a growing community of <strong>over 3,000 satisfied customers</strong> who have transformed their lighting experience with the Dragon Lighter. Our customers rave about its reliability, style, and innovative features, making it a top choice among discerning users worldwide. From adventurers braving the great outdoors to style enthusiasts looking for that perfect accessory, the Dragon Lighter has earned glowing reviews across the board. Don’t just take our word for it – experience the difference that so many have already discovered. Make the switch to sophistication; make the switch to Dragon Lighter.
+        </p>
+      </div>
 
-    <div class="Style-picture">
-      <img  src="/images/dual flame.gif" alt="wind gif">
-      <p>The Dragon Lighter is equipped with a dual flame</p>
-    </div>
-    </div>
+      <div class="lighter-feature">
+        <h3>Large, larger, largest</h3>
+        <div class="lighter-video">
+          <video src="/videos/flamesize.mp4" autoplay loop muted playsinline>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="feature-description">By moving the screw at the bottom you can easily make the <strong>primary flame</strong> larger and smaller. With this you can be more economical💸, or more bold😎.</p>
+      </div>
+    </div> <!-- end of belowBuy -->
 
     <section class="money-back-guarantee">
       <div class="guarantee-content">

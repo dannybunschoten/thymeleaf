@@ -11,6 +11,7 @@ html, body {
   height: auto;
 }
 
+
 .swiper-slide {
   height: 600px; /* or any other fixed height */
   position: relative; /* needed for absolute positioning of the image */
@@ -286,7 +287,7 @@ main {
   margin-top: 0; /* Remove default top margin */
   color: #333; /* Color for the title */
   margin-bottom: 15px; /* Space between title and image */
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .feature-description {

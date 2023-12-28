@@ -62,6 +62,9 @@ var swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
+    lazy: true,
+    loadPrevNext: true,
+    loadPrevNextAmount: 2,
     // If you need pagination
     pagination: {
         el: '.swiper-pagination',
