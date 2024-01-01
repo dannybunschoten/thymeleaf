@@ -247,19 +247,6 @@ main {
   }
 }
 
-.Refilling, .Style-picture, .change-size-picture {
-  text-align: center;
-  font-size: 1.5em; /* Larger font size for the headline */
-  color: #333; /* Dark color for emphasis */
-  margin-bottom: 0.5em;
-}
-
-.Refilling img, .Style-picture img, .change-size-picture img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
 .refillable-text, .Weather-text, .social-proof {
     background-color: #fff;
     padding: 15px;
@@ -302,6 +289,14 @@ main {
 }
 
 .lighter-feature .lighter-video video {
+  width: 80%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 600px; /* Maximum width, adjust as needed */
+  margin: 0 auto; /* Center the video in the container */
+  border-radius: 8px; /* If you want rounded corners */
+}
+
+.lighter-feature .lighter-video img {
   width: 80%; /* Full width of the container */
   height: auto; /* Maintain aspect ratio */
   max-width: 600px; /* Maximum width, adjust as needed */
